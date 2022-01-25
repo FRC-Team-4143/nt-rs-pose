@@ -1,0 +1,10 @@
+[Unit]
+Description=Send RealSense pose to NetworkTables
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/nt-rs-pose
+User=pi
+
+[Install]
+WantedBy=multi-user.target

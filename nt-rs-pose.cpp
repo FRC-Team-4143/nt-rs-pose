@@ -35,7 +35,7 @@ int main(int argc, char * argv[]) try
 
     // Create network table
     nt::NetworkTableInstance inst = nt::NetworkTableInstance::GetDefault();
-    std::shared_ptr<nt::NetworkTable> table = inst.GetTable("rspose");
+    std::shared_ptr<nt::NetworkTable> table = inst.GetTable("/RealSensePose");
     nt::NetworkTableEntry xEntry = table->GetEntry("x");
     nt::NetworkTableEntry yEntry = table->GetEntry("y");
     nt::NetworkTableEntry zEntry = table->GetEntry("z");
