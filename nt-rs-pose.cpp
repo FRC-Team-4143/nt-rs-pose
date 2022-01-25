@@ -72,7 +72,7 @@ int main(int argc, char * argv[]) try
         auto pose_data = f.as<rs2::pose_frame>().get_pose_data();
 
 	// send pose to network tables
-	xEntry.SetDouble(pose_data.translation.x);
+	table->GetEntry("x").SetDouble(pose_data.translation.x);
 	yEntry.SetDouble(pose_data.translation.y);
 	zEntry.SetDouble(pose_data.translation.z);
 	vxEntry.SetDouble(pose_data.velocity.x);
