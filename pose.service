@@ -5,6 +5,8 @@ After=multi-user.target
 [Service]
 ExecStart=/usr/local/bin/nt-rs-pose
 User=pi
+Restart=on-failure
+RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
